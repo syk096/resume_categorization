@@ -54,14 +54,20 @@ python script.py path/to/resume/pdfs
 > By running the script will create a folder named ```categorized_resume``` and  move the resumes from the ```file_path``` to the respective folders according to the category of the resume and will create a `categorize_resume.csv` file in the current directory.
 
 ## Training results
-I have initially split the dataset into a training set, validation set and a test set using an 80:10:10 ratio. Subsequently, I observed that the training dataset was imbalanced. To address this imbalance, I performed data augmentation on a portion of the training data, resulting in a more balanced training set. However, it's important to note that the validation and test dataset remained unchanged and was not subjected to any augmentation.
+I have initially split the dataset into a training set, validation set and a test set using an 80:10:10 ratio. Subsequently, I observed that the training dataset was imbalanced. To address this imbalance, I performed data augmentation on a portion of the training data, resulting in a more balanced training set. However, it's important to note that the validation and test dataset remained unchanged and was not subjected to any augmentation. This experiment is on BERT model
 #### Below picture illustrating Train vs Test accuracy graph
 ![Train vs Test](images/bert_model_output.png)
 #### Below picture illustrating the training loss graph
 ![Train loss](images/bert_model_loss.png)
 
+## Performanca on different ML method with BERT
+
+![model comparison](images/model_selection.png)
+
+**That's why I choose BERT model for this experiment**
+
 ## Performance
-I evaluated the performance of my model on a separate set of Test samples that were not included in the training dataset. Below table presenting the evaluation table.
+I evaluated the performance of my BERT model on a separate set of Test samples that were not included in the training dataset. Below table presenting the evaluation table.
 
 | Evaluation metrics     | score       |
 | -----------            | ----------- |
